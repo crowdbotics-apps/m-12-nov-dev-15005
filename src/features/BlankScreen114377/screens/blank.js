@@ -23,21 +23,9 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { Switch_5: true }
+  state = {}
 
-  render = () => (
-    <View>
-      <Button
-        title="Press me!"
-        onPress={() => this.props.navigation.navigate("BlankScreen614440")}
-      />
-      <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
-        value={this.state.Switch_5}
-        onValueChange={nextChecked => this.setState({ Switch_5: nextChecked })}
-      />
-    </View>
-  )
+  render = () => <View />
 }
 
 const styles = StyleSheet.create({
@@ -45,7 +33,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Button_3: {},
-  Switch_5: {}
+  Switch_5: {},
+  View_1: {}
 })
